@@ -1,9 +1,11 @@
 <div class="alert alert-danger" role="alert">
     This is a danger alert—check it out!
   </div>
- <input type="text"> <br> <br>
+ <input type="text" (input) = "Inputfunc($event)"> <br> <br>
 
   <button class="btn btn-primary" [disabled] = "!allowNewServer" (click) = Funcservercreate()  >Push Me</button>
+
+  <p>{{Noname}}</p>
 
   <p>{{allowNewServer}}</p>
 

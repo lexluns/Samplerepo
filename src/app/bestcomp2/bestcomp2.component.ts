@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Bestcomp2Component implements OnInit {
   allowNewServer = false;
   servercreationstatus = 'No Sever was created';
+  Noname = " ";
 
   constructor() {
 
@@ -24,6 +25,13 @@ export class Bestcomp2Component implements OnInit {
   Funcservercreate () {
 
    this.servercreationstatus = 'it is created now';
+
+  }
+
+  Inputfunc(event: Event){
+
+    console.log(event)
+ this.Noname = (<HTMLInputElement>event.target).value;
 
   }
 
