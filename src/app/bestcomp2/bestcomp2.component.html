@@ -1,8 +1,10 @@
 <div class="alert alert-danger" role="alert">
     This is a danger alert—check it out!
   </div>
+ <input type="text"> <br> <br>
 
-
-  <button class="btn btn-primary" [disabled] = "!allowNewServer">Push Me</button>
+  <button class="btn btn-primary" [disabled] = "!allowNewServer" (click) = Funcservercreate()  >Push Me</button>
 
   <p>{{allowNewServer}}</p>
+
+  <p>{{servercreationstatus}}</p>

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Bestcomp2Component implements OnInit {
   allowNewServer = false;
+  servercreationstatus = 'No Sever was created';
 
   constructor() {
 
@@ -18,6 +19,12 @@ export class Bestcomp2Component implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  Funcservercreate () {
+
+   this.servercreationstatus = 'it is created now';
+
   }
 
 }
