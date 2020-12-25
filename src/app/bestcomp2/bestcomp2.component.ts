@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,25 +8,33 @@ import { Component, OnInit } from '@angular/core';
 export class Bestcomp2Component implements OnInit {
   allowNewServer = false;
   servercreationstatus = 'No Sever was created';
-  Noname = "";
+  Noname = " ";
+  MyPass = " ";
 
   constructor() {
 
+
+
+    setTimeout(() => {
+      this.allowNewServer = true;
+
+
+    },2000);
   }
 
   ngOnInit(): void {
+    this.Noname = (<HTMLInputElement>event.target).value;
+    this.MyPass = (<HTMLInputElement>event.target).value;
   }
 
-  Funcservercreate () {
+  MyFunc () {
 
    this.Noname = '';
 
   }
 
-  Inputfunc(event: Event){
 
- this.Noname = (<HTMLInputElement>event.target).value;
 
-  }
+
 
 }
