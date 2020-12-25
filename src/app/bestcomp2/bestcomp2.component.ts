@@ -30,6 +30,7 @@ export class Bestcomp2Component implements OnInit {
   MyFunc () {
 
    this.Noname = '';
+   this.MyPass = '';
 
   }
 

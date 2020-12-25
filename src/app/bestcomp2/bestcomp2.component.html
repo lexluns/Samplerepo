@@ -1,11 +1,11 @@
 <div class="alert alert-danger" role="alert">
     This is a danger alert—check it out!
   </div>
- Username: <input type="text"  [(ngModel)] = "Noname"  > <br> <br>
+ Username: <input type="text"  [(ngModel)] = "Noname" > <br> <br>
 
  Password: <input type="text"  [(ngModel)] = "MyPass"> <br> <br>
 
-  <button class="btn btn-primary" (disabled)  = "Noname === ''" (click) = MyFunc()  >Push Me</button>
+  <button class="btn btn-primary" [disabled]  = "Noname === ''" (click) = MyFunc()  >Push Me</button>
 
   <p>{{Noname}}</p>
 
