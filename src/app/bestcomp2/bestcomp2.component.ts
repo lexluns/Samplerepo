@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class Bestcomp2Component implements OnInit {
   allowNewServer = false;
   servercreationstatus = 'No Sever was created';
-  Noname = " ";
+  Noname = "Testing";
 
   constructor() {
 
