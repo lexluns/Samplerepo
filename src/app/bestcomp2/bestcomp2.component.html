@@ -13,4 +13,10 @@
 
   <p>{{allowNewServer}}</p>
 
-  <p>{{servercreationstatus}}</p>
+  <p [ngStyle] = "{backgroundColor: getColor()}">{{serverstats}}</p>
+
+  <p *ngIf = "serverCreated; else noserver">{{servercreationstatus}}</p>
+
+  <ng-template #noserver>
+<p>Nothing bro</p>
+  </ng-template>

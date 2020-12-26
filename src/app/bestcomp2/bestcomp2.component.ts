@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Bestcomp2Component implements OnInit {
   allowNewServer = false;
-  servercreationstatus = 'No Sever was created';
+  servercreationstatus = 'Sever was created!';
   Noname = " ";
   MyPass = " ";
+  serverCreated = false;
+  serverstats = 'Hey';
+
 
   constructor() {
 
-
+    this.serverstats = Math.random() > 0.5 ? 'online' : 'No';
 
     setTimeout(() => {
       this.allowNewServer = true;
@@ -27,10 +30,18 @@ export class Bestcomp2Component implements OnInit {
     this.MyPass = (<HTMLInputElement>event.target).value;
   }
 
+  getColor(){
+
+ return this.serverstats === 'online' ? 'green' : 'red';
+
+  }
+
   MyFunc () {
 
    this.Noname = '';
    this.MyPass = '';
+   this.serverCreated = true;
+
 
   }
 
